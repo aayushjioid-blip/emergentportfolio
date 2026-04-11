@@ -1,0 +1,27 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom color variables */
+:root {
+  --navy-900: #0a1628;
+  --navy-800: #1a2640;
+  --electric-blue: #0ea5e9;
+}
+
+/* Remove default App centering */
+.App {
+  text-align: left;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* Section spacing consistency */
+section {
+  scroll-margin-top: 80px;
+}
