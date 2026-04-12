@@ -22,7 +22,7 @@ export const portfolioData = {
   },
 
   about: {
-    summary: "Product Manager with over 5 years of experience delivering enterprise-scale digital products across BFSI, Life Sciences, E-commerce, EdTech, and Manufacturing domains. Expert in product discovery, roadmap planning, and agile delivery with a focus on AI-augmented workflows.",
+    summary: "Product Manager with over 5 years of experience delivering enterprise-scale digital products across BFSI, Life Sciences, E-commerce, EdTech, and Manufacturing domains. Expert in product discovery, roadmap planning, and agile delivery with a focus on AI-augmented workflows. Specialized in leveraging Generative AI tools and building custom AI agents to enhance product development and team productivity.",
     stats: [
       { value: "5+", label: "Years in product" },
       { value: "4", label: "Enterprise clients" },
@@ -30,8 +30,15 @@ export const portfolioData = {
     ],
     certifications: [
       "SAFe 6.0 POPM (2024)",
+      "Generative AI Mastermind - Outskill (2024)",
       "Business Analysis: Functional and NFR (2025)",
       "Claude Code Beginner Crash Course (2026)"
+    ],
+    aiTraining: [
+      "Foundations of Gen AI, Gen AI Tools & Prompt Engineering",
+      "Building Personalised AI Agents",
+      "AI Automations",
+      "50+ AI Tools Mastery"
     ],
     education: {
       mba: "IMT Ghaziabad (2021-2023)",
@@ -104,12 +111,12 @@ export const portfolioData = {
       items: ["SAFe 6.0", "Scrum", "Kanban", "Sprint Planning", "Backlog Grooming", "SDLC"]
     },
     {
-      category: "AI & Tools",
-      items: ["ChatGPT", "Claude", "Copilot", "Jira", "Confluence", "MIRO", "Figma", "Power BI", "Azure DevOps"]
+      category: "AI & Automation",
+      items: ["ChatGPT", "Claude", "Copilot", "Custom AI Agents", "Prompt Engineering", "AI Workflows", "Gen AI Tools"]
     },
     {
-      category: "Domain Expertise",
-      items: ["Payments", "Core Banking", "BFSI", "Life Sciences", "E-commerce", "BRD/FRD/PRD"]
+      category: "Tools & Platforms",
+      items: ["Jira", "Confluence", "MIRO", "Figma", "Power BI", "Azure DevOps", "Rally"]
     }
   ],
 
@@ -166,8 +173,50 @@ export const portfolioData = {
       "Fine-tuned custom AI agents for sprint analysis, defect triage, and review preparation",
       "Cut meeting prep time significantly through AI-assisted automation"
     ],
-    tools: ["Claude Projects", "Microsoft Copilot Studio", "ChatGPT"],
-    applications: ["Requirement Drafting", "BRD/FRD Generation", "Test Scenario Analysis", "Competitive Benchmarking", "Stakeholder Communication"]
+    tools: ["Claude Projects", "Microsoft Copilot Studio", "ChatGPT", "Custom AI Agents"],
+    applications: ["Requirement Drafting", "BRD/FRD Generation", "Test Scenario Analysis", "Competitive Benchmarking", "Stakeholder Communication"],
+    certifications: [
+      {
+        name: "Generative AI Mastermind",
+        issuer: "Outskill",
+        instructor: "Vaibhav Sisinty",
+        year: "2024"
+      },
+      {
+        name: "Claude Code Beginner Crash Course",
+        issuer: "Udemy",
+        instructor: "Eden Marco",
+        hours: "8.5",
+        year: "2026"
+      }
+    ],
+    training: [
+      {
+        name: "Foundations of Gen AI, Gen AI Tools & Prompt Engineering",
+        type: "Workbook",
+        link: "https://drive.google.com/file/d/1CpptxI3Qpn4iJI3spVteda7fa4oH4qhW/view"
+      },
+      {
+        name: "Building Personalised AI Agents",
+        type: "Workbook",
+        link: "https://drive.google.com/file/d/1BPG9CzUv_9K0gu0FIg3dj2mDLtAPiNrK/view"
+      },
+      {
+        name: "AI Automations",
+        type: "Workbook",
+        link: "https://drive.google.com/file/d/1SDm2krj-W-A_vjdHjyg2hyJxfiE-CKkX/view"
+      },
+      {
+        name: "50+ AI Tools Mastery",
+        type: "Resource",
+        link: "https://empty-playroom-5d0.notion.site/50-AI-Tools-1bad1f04695080d9a2f2e9ad777a87bf"
+      }
+    ],
+    resources: [
+      "Prompts & Tools Database",
+      "Gen AI Mastermind Session Notes",
+      "AI Workflow Documentation"
+    ]
   },
 
   highlights: [

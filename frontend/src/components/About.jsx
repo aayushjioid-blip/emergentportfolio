@@ -55,6 +55,28 @@ const About = ({ data }) => {
               </div>
             </Card>
 
+            {/* AI Training Card */}
+            {data.aiTraining && (
+              <Card className="p-8 bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover-lift">
+                <div className="flex items-start gap-5">
+                  <div className="p-4 bg-purple-600 rounded-2xl shadow-lg">
+                    <Sparkles className="h-7 w-7 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-display font-bold text-gray-900 mb-4">AI Training</h3>
+                    <ul className="space-y-3">
+                      {data.aiTraining.map((training, index) => (
+                        <li key={index} className="flex items-center gap-3">
+                          <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
+                          <span className="text-lg text-gray-700 font-medium">{training}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+            )}
+
             {/* Education Card */}
             <Card className="p-8 bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 hover-lift">
               <div className="flex items-start gap-5">
