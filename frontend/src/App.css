@@ -27,14 +27,22 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Display font class */
+/* Display font class - using Poppins instead of Playfair */
 .font-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Soft gradient text for stats */
+.soft-gradient-text {
+  background: linear-gradient(135deg, #334155 0%, #64748b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

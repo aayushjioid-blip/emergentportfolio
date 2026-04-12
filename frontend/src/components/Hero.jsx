@@ -22,7 +22,7 @@ const Hero = ({ data }) => {
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
       {/* Decorative Background Text */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-        <div className="bg-text font-display">PRODUCT</div>
+        <div className="bg-text font-display" style={{ fontWeight: 300 }}>PRODUCT</div>
       </div>
 
       {/* Floating Badge */}
@@ -53,36 +53,36 @@ const Hero = ({ data }) => {
                 <span className="text-sm font-medium text-gray-700">Available for opportunities</span>
               </div>
               
-              <div className="space-y-4">
-                <h1 className="text-7xl lg:text-8xl xl:text-9xl font-display font-bold text-gray-900 leading-none">
+              <div className="space-y-5">
+                <h1 className="font-display text-7xl lg:text-8xl xl:text-9xl font-light text-gray-900 leading-none tracking-tight">
                   Hello
                   <span className="inline-block ml-4 text-6xl lg:text-7xl">👋</span>
                 </h1>
                 <div className="flex items-center gap-3">
-                  <div className="h-1 w-20 bg-blue-600"></div>
-                  <p className="text-xl lg:text-2xl text-gray-600 font-medium">
+                  <div className="h-0.5 w-16 bg-blue-600"></div>
+                  <p className="text-xl lg:text-2xl text-gray-600 font-normal">
                     I'm {data.personal.name.split(' ')[0]}
                   </p>
                 </div>
               </div>
 
-              <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 leading-relaxed">
+              <h2 className="text-2xl lg:text-3xl font-medium text-gray-800 leading-relaxed" style={{ fontWeight: 500, letterSpacing: '-0.02em' }}>
                 {data.personal.tagline}
               </h2>
 
-              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl">
+              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl font-normal">
                 {data.hero.subheadline}
               </p>
             </div>
 
-            {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-6 fade-in-up stagger-1">
+            {/* Stats Row - Softer styling */}
+            <div className="grid grid-cols-3 gap-8 fade-in-up stagger-1">
               {data.about.stats.map((stat, index) => (
-                <div key={index} className="space-y-1">
-                  <div className="text-4xl lg:text-5xl font-display font-bold gradient-text">
+                <div key={index} className="space-y-2">
+                  <div className="text-4xl lg:text-5xl font-display font-light soft-gradient-text" style={{ letterSpacing: '-0.03em' }}>
                     {stat.value}
                   </div>
-                  <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
+                  <div className="text-sm text-gray-500 font-normal">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -92,7 +92,7 @@ const Hero = ({ data }) => {
               <Button
                 onClick={() => scrollToSection('projects')}
                 size="lg"
-                className="bg-gray-900 hover:bg-gray-800 text-white group text-base px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gray-900 hover:bg-gray-800 text-white group text-base px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 font-medium"
               >
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -101,7 +101,7 @@ const Hero = ({ data }) => {
                 onClick={handleDownloadResume}
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white text-base px-8 py-6 rounded-full transition-all duration-300"
+                className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white text-base px-8 py-6 rounded-full transition-all duration-300 font-medium"
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
@@ -136,15 +136,15 @@ const Hero = ({ data }) => {
                 {/* Floating Elements */}
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-white rounded-2xl shadow-xl p-4 rotate-12 hover:rotate-0 transition-transform duration-300">
                   <div className="flex flex-col items-center justify-center h-full">
-                    <div className="text-2xl font-bold text-gray-900">4+</div>
-                    <div className="text-xs text-gray-600 text-center">Enterprise Clients</div>
+                    <div className="text-2xl font-display font-light text-gray-900">4+</div>
+                    <div className="text-xs text-gray-600 text-center font-normal">Enterprise Clients</div>
                   </div>
                 </div>
 
                 <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-gray-900 rounded-2xl shadow-xl p-4 -rotate-6 hover:rotate-0 transition-transform duration-300">
                   <div className="flex flex-col items-center justify-center h-full">
-                    <div className="text-2xl font-bold text-white">6</div>
-                    <div className="text-xs text-gray-300 text-center">Domains</div>
+                    <div className="text-2xl font-display font-light text-white">6</div>
+                    <div className="text-xs text-gray-300 text-center font-normal">Domains</div>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Hero = ({ data }) => {
                   <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
                   <div>
                     <div className="text-xs text-gray-500 font-medium">Based in</div>
-                    <div className="text-sm font-bold text-gray-900">{data.personal.location}</div>
+                    <div className="text-sm font-semibold text-gray-900">{data.personal.location}</div>
                   </div>
                 </div>
               </div>
