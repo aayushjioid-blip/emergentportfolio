@@ -1,136 +1,180 @@
-// TODO: Replace this mock data with actual resume parsing data
+// Real data from Aayush Rajput's resume and certifications
 
 export const portfolioData = {
   personal: {
     name: "Aayush Rajput",
     role: "Product Manager & Product Owner",
+    designation: "Senior Consultant",
     tagline: "Building products at the intersection of fintech, enterprise & agile delivery",
     location: "Pune, India",
     openTo: "Senior PM roles in fintech and payments",
     locationNote: "Based in Pune, open to Bangalore / Mumbai / remote",
     avatar: "https://api.dicebear.com/7.x/initials/svg?seed=AR&backgroundColor=0a1628&textColor=ffffff",
-    email: "aayush.rajput@example.com",
-    linkedin: "https://linkedin.com/in/aayush-rajput",
+    email: "aayushhrajput@gmail.com",
+    phone: "+91-7000393919",
+    linkedin: "https://linkedin.com/in/aayushhrajput",
     resumePdf: "/resume.pdf"
   },
 
   hero: {
     headline: "I build products people actually use",
-    subheadline: "5 years shipping enterprise products across fintech, life sciences & e-commerce"
+    subheadline: "5+ years delivering enterprise-scale digital products across BFSI, Life Sciences, E-commerce, EdTech & Manufacturing"
   },
 
   about: {
-    summary: "PM/PO with 5 years at Cognizant across enterprise clients. Background in BA at TCS before that. I bridge business goals with technical delivery — roadmaps, sprint ceremonies, stakeholder alignment, the works.",
+    summary: "Product Manager with over 5 years of experience delivering enterprise-scale digital products across BFSI, Life Sciences, E-commerce, EdTech, and Manufacturing domains. Expert in product discovery, roadmap planning, and agile delivery with a focus on AI-augmented workflows.",
     stats: [
       { value: "5+", label: "Years in product" },
       { value: "4", label: "Enterprise clients" },
-      { value: "6", label: "Industry domains" }
+      { value: "95%", label: "Sprint completion" }
     ],
-    certifications: ["SAFe 6.0 POPM"],
+    certifications: [
+      "SAFe 6.0 POPM (2024)",
+      "Business Analysis: Functional and NFR (2025)",
+      "Claude Code Beginner Crash Course (2026)"
+    ],
     education: {
-      mba: "IMT Ghaziabad",
-      undergrad: "BE — Electronics & Communication Engineering"
+      mba: "IMT Ghaziabad (2021-2023)",
+      undergrad: "BE — Electronics & Communication Engineering (2015-2019)"
     }
   },
 
   projects: [
     {
       id: 1,
-      title: "Payments Platform — Mastercard",
-      domain: "BFSI / Payments",
+      title: "Prepaid Card Management Platform — Mastercard",
+      domain: "BFSI / B2B & B2C Payments",
       role: "Product Owner",
-      oneLiner: "Led roadmap and sprint delivery for a payments integration product",
-      problem: "Mastercard needed a scalable integration platform to streamline payment processing across multiple channels and reduce transaction latency.",
-      approach: "Owned product backlog, conducted stakeholder interviews, defined sprint goals, and coordinated with engineering teams across 3 geographies. Implemented SAFe framework for large-scale delivery.",
-      outcome: "Reduced integration time by 40%, improved transaction processing speed by 25%, and successfully delivered 8 sprints on schedule.",
-      tags: ["Payments", "Agile", "SAFe", "Stakeholder Management"]
+      company: "Cognizant Technology Solutions",
+      duration: "Aug 2023 - Present",
+      oneLiner: "Led end-to-end delivery of prepaid card management platform serving B2B/B2C payments ecosystem",
+      problem: "Mastercard needed to modernize legacy prepaid card workflows to improve customer experience and enable faster adoption across new geographies and banking partners.",
+      approach: "Owned product vision, roadmap, and prioritized backlogs aligned with business objectives and regulatory requirements. Led sprint planning, backlog grooming, and reviews across distributed teams. Authored detailed Functional User Stories (FUS), Testing User Stories (TUS), and acceptance criteria.",
+      outcome: "Achieved 95%+ sprint goal completion consistently. Reduced requirement-related defects by 30%. Successfully modernized workflows enabling faster adoption across new geographies and banking partners. Improved customer experience significantly.",
+      tags: ["Payments", "B2B/B2C", "Agile", "SAFe", "Regulatory Compliance"]
     },
     {
       id: 2,
-      title: "Supply Chain Portal — Abbott Nutrition",
-      domain: "Life Sciences",
+      title: "E-commerce & Customer Engagement Platform — Abbott Nutrition",
+      domain: "Life Sciences / Global Health & Nutrition",
       role: "Product Owner",
-      oneLiner: "Owned end-to-end product backlog for a supply chain visibility tool",
-      problem: "Abbott needed real-time visibility into their supply chain operations to reduce delays and improve inventory management across multiple facilities.",
-      approach: "Created user stories, prioritized backlog based on business value, facilitated sprint planning sessions, and managed release cycles. Used MIRO for collaborative planning.",
-      outcome: "Delivered 12 features across 6 sprints, achieved 95% sprint commitment accuracy, and improved supply chain visibility by 60%.",
-      tags: ["Life Sciences", "Backlog Management", "Stakeholder Alignment"]
+      company: "Cognizant Technology Solutions",
+      duration: "2023-2024",
+      oneLiner: "Delivered global e-commerce platform providing leadership with real-time visibility into sales and engagement metrics",
+      problem: "Abbott Nutrition required a scalable e-commerce and customer engagement platform to track sales, engagement metrics, and onboard users across multiple websites globally.",
+      approach: "Led product strategy and delivery using Agile methodologies. Collaborated with PowerBI teams to map attributes, validate dashboards, and enable accurate reporting. Streamlined backlog refinement and story estimation practices.",
+      outcome: "Successfully onboarded 10K+ users across websites within 6 months. Provided leadership with real-time visibility into sales and engagement metrics. Improved delivery predictability through better backlog management.",
+      tags: ["E-commerce", "Life Sciences", "Power BI", "User Onboarding", "Analytics"]
     },
     {
       id: 3,
-      title: "Infrastructure Delivery — Network Rail",
-      domain: "Manufacturing / Infrastructure",
-      role: "Product Manager",
-      oneLiner: "Drove digital transformation delivery for rail infrastructure client",
-      problem: "Network Rail required a digital transformation initiative to modernize legacy infrastructure management systems and improve operational efficiency.",
-      approach: "Defined product vision and roadmap, conducted user research with field engineers, managed cross-functional teams, and tracked KPIs using Power BI dashboards.",
-      outcome: "Successfully migrated 5 legacy systems to cloud, reduced operational costs by 30%, and improved user satisfaction scores by 45%.",
-      tags: ["Digital Transformation", "Azure DevOps", "Cross-geography"]
+      title: "Digital Survey & Order Management System — Network Rail",
+      domain: "Infrastructure / Railway Operations",
+      role: "Product Owner",
+      company: "Cognizant Technology Solutions",
+      duration: "2023",
+      oneLiner: "Delivered digital transformation solution for infrastructure survey and order management",
+      problem: "Network Rail needed to digitize legacy survey and order management processes to improve operational efficiency and enable better tracking of infrastructure projects.",
+      approach: "Defined product vision and roadmap. Led sprint planning and stakeholder alignment across business and engineering teams. Ensured clear requirement translation and faster decision-making through effective liaison.",
+      outcome: "Successfully delivered digital survey and order management system improving operational efficiency. Enhanced tracking and visibility of infrastructure projects.",
+      tags: ["Infrastructure", "Digital Transformation", "Order Management", "Operations"]
     },
     {
       id: 4,
-      title: "Banking Product Suite — US Bank",
-      domain: "BFSI",
+      title: "Banking Workflows Platform — US Bank",
+      domain: "BFSI / Core Banking",
       role: "Product Owner",
-      oneLiner: "Managed product backlog and release planning for banking feature suite",
-      problem: "US Bank needed to enhance their digital banking suite with new features while maintaining compliance and security standards.",
-      approach: "Managed epic and feature breakdown, coordinated with compliance teams, ran PI planning sessions, and maintained product roadmap using Jira and Confluence.",
-      outcome: "Delivered 15 features across 4 releases, maintained 100% compliance standards, and increased customer engagement by 35%.",
-      tags: ["Banking", "Release Planning", "Jira", "Compliance"]
+      company: "Cognizant Technology Solutions",
+      duration: "2023",
+      oneLiner: "Delivered secure, scalable banking workflows focused on customer experience",
+      problem: "US Bank required modern banking workflows with enhanced security, scalability, and improved customer experience while maintaining regulatory compliance.",
+      approach: "Authored detailed requirements with focus on security and compliance. Participated in defect triage calls and partnered with QA teams to improve test coverage and release quality. Streamlined acceptance criteria and early stakeholder validation.",
+      outcome: "Delivered secure and scalable banking workflows. Reduced rework through well-defined acceptance criteria. Improved customer experience while maintaining regulatory compliance.",
+      tags: ["Banking", "Security", "Compliance", "Customer Experience", "Scalability"]
     }
   ],
 
   skills: [
     {
-      category: "Product craft",
-      items: ["Roadmapping", "PRD writing", "User story mapping", "OKR setting", "Backlog grooming", "Release planning"]
+      category: "Product Management",
+      items: ["Product Discovery", "Roadmap Planning", "Backlog Prioritization", "User Stories", "MVP Definition", "Stakeholder Management"]
     },
     {
-      category: "Delivery & agile",
-      items: ["SAFe 6.0", "Scrum ceremonies", "Sprint planning", "PI Planning", "Azure DevOps", "Jira / Confluence"]
+      category: "Agile & Delivery",
+      items: ["SAFe 6.0", "Scrum", "Kanban", "Sprint Planning", "Backlog Grooming", "SDLC"]
     },
     {
-      category: "Discovery & design",
-      items: ["User interviews", "Wireframing", "Figma", "MIRO", "A/B testing mindset"]
+      category: "AI & Tools",
+      items: ["ChatGPT", "Claude", "Copilot", "Jira", "Confluence", "MIRO", "Figma", "Power BI", "Azure DevOps"]
     },
     {
-      category: "Analytics & data",
-      items: ["Power BI", "KPI dashboards", "Funnel analysis", "Stakeholder reporting"]
+      category: "Domain Expertise",
+      items: ["Payments", "Core Banking", "BFSI", "Life Sciences", "E-commerce", "BRD/FRD/PRD"]
     }
   ],
 
   timeline: [
     {
+      year: "2023-Present",
+      event: "Product Owner at Cognizant",
+      description: "Leading enterprise product delivery for Mastercard, Abbott, Network Rail, US Bank",
+      company: "Cognizant Technology Solutions"
+    },
+    {
       year: "2024",
-      event: "Led delivery across Mastercard, Abbott, Network Rail, US Bank",
-      company: "Cognizant Technology Solutions"
-    },
-    {
-      year: "2021",
       event: "SAFe 6.0 POPM Certified",
-      company: "Scaled Agile"
+      company: "Scaled Agile Inc"
     },
     {
-      year: "2020",
-      event: "Moved to Product Owner role at Cognizant",
-      company: "Cognizant Technology Solutions"
+      year: "2021-2023",
+      event: "MBA from IMT Ghaziabad",
+      description: "Merit scholarship recipient",
+      company: "IMT Ghaziabad"
     },
     {
-      year: "2019",
-      event: "Started as Business Analyst at TCS",
+      year: "2019-2021",
+      event: "Business Analyst at TCS",
+      description: "Supporting business analysis and requirements gathering",
       company: "Tata Consultancy Services"
+    },
+    {
+      year: "2015-2019",
+      event: "B.E. in Electronics & Communication",
+      company: "Medi-caps Institute, Indore"
     }
   ],
 
-  tools: ["Jira", "Confluence", "MIRO", "Figma", "Power BI", "Azure DevOps"],
+  tools: ["Jira", "Confluence", "MIRO", "Figma", "Power BI", "Azure DevOps", "Rally", "ALM", "ChatGPT", "Claude", "Copilot"],
   
   domains: [
     "BFSI / Payments",
     "Life Sciences",
     "E-commerce",
     "EdTech",
-    "Manufacturing"
+    "Manufacturing",
+    "Infrastructure"
   ],
 
-  clients: ["Mastercard", "Abbott Nutrition", "Network Rail", "US Bank"]
+  clients: ["Mastercard", "Abbott Nutrition", "Network Rail", "US Bank"],
+
+  aiExpertise: {
+    summary: "AI-augmented Product Management specialist with proven track record of leveraging AI tools to accelerate product delivery and decision-making.",
+    achievements: [
+      "Built and customized AI agents in Claude and Microsoft Copilot for payments domain contexts",
+      "Reduced documentation effort by ~40% through AI-integrated workflows",
+      "Improved first-pass quality of user stories and acceptance criteria using AI tools",
+      "Fine-tuned custom AI agents for sprint analysis, defect triage, and review preparation",
+      "Cut meeting prep time significantly through AI-assisted automation"
+    ],
+    tools: ["Claude Projects", "Microsoft Copilot Studio", "ChatGPT"],
+    applications: ["Requirement Drafting", "BRD/FRD Generation", "Test Scenario Analysis", "Competitive Benchmarking", "Stakeholder Communication"]
+  },
+
+  highlights: [
+    "95%+ sprint goal completion rate",
+    "30% reduction in requirement-related defects",
+    "40% reduction in documentation effort through AI",
+    "10K+ users onboarded within 6 months",
+    "32 months of continuous product ownership at Cognizant"
+  ]
 };
