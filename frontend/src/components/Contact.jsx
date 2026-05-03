@@ -13,8 +13,13 @@ const Contact = ({ data }) => {
   };
 
   const handleDownloadResume = () => {
-    // TODO: Implement actual resume download
-    console.log('Download resume');
+    // Create a temporary anchor element to trigger download
+    const link = document.createElement('a');
+    link.href = '/Aayush_Rajput_Resume.pdf';
+    link.download = 'Aayush_Rajput_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
